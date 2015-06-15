@@ -1,0 +1,39 @@
+# Github Node Default
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+# From Mean Stack
+bower_components/
+.DS_Store
+.nodemonignore
+.sass-cache/
+node_modules/
+public/lib
+test/coverage/
+migrations/
+
+*.local
+
+# IDE files
+.idea
+/.*.md.html
+.settings
+.project
+.classpath
+*~
+*.swp
+*.swo
