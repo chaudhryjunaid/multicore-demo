@@ -13,5 +13,6 @@ if (cluster.isMaster) {
 } else {
     // Workers can share any TCP connection
     // In this case its a HTTP server
-    var server = require('./www');
+    var server = require('./mcwww');
+    server();
 }
