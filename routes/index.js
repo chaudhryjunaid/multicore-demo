@@ -10,11 +10,18 @@ router.get('/', function(req, res, next) {
             a = b;
             b = f;
         }
-        return f;
+        return f ;
     };
-    var n = req.param('n');
-    if (!n) n = 1000;
-    res.send({n: fn(n)});
+    var n = getRandomInt(35, 50);
+    var f = fn(n);
+    for (var k=0; k<50000000; k++){
+
+    }
+    res.send({n: f, pid: process.pid});
 });
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
 module.exports = router;

@@ -3,8 +3,8 @@ var siege = require('siege');
 // run cpu bound service benchmark
 siege()
     .on(3000)
-    .for(10000).times
-    .concurrent(1000)
+    .for(1000).times
+    .concurrent(100)
     .get('/')
     .attack();
 
